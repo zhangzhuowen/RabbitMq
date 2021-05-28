@@ -1,0 +1,16 @@
+server:
+  port: 8887
+spring:
+  rabbitmq:
+    host: 10.61.8.4
+    port: 30039
+    username: admin
+    password: admin
+    publisher-returns: true
+    publisher-confirm-type: correlated
+    #以下配置消费者方需要
+    listener:
+      simple:
+        acknowledge-mode: manual
+    template:
+      mandatory: true

@@ -1,0 +1,11 @@
+server:
+  port: 8888
+spring:
+  rabbitmq:
+    host: 10.61.8.4
+    port: 30039
+    username: admin
+    password: admin
+    #生产者方开启消息确认的配置
+    publisher-returns: true
+    publisher-confirm-type: correlated
